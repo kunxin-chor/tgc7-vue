@@ -1,26 +1,16 @@
 <template>
-    <div>
-        <MathForm/>    
+    <div class="container">
+        <TodoListAdvanced/>
     </div>
 </template>
 
 <script>
-// import TemplateDemo from './components/TemplateDemo.vue'
-// import Counter from './components/Counter.vue'
-// import Basic from './components/Basic.vue'
-// import Alert from './components/Alert.vue'
-// import Form from './components/Form.vue'
-import MathForm from './components/MathForm.vue'
+import TodoListAdvanced from './components/TodoListAdvanced'
 
 export default {
   name: 'App',
   components: {
-    //  TemplateDemo,
-    //  Counter,
-    //  Basic,
-    //  Alert
-    // Form
-    MathForm
+    TodoListAdvanced
   }
 }
 </script>
