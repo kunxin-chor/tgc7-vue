@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-      <!-- <QueueExample/> -->
+      <QueueExample/>
       <AnimationQueue/>
   </div>
 </template>
 
 <script>
-// import QueueExample from './components/QueueExample';
+import QueueExample from './components/QueueExample';
 import AnimationQueue from './components/AnimationQueue'
 
 export default {
   name: 'App',
   components: { 
-      AnimationQueue
+      AnimationQueue,
+      QueueExample
   }
 }
 </script>

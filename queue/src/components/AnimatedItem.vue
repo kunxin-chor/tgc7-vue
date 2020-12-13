@@ -16,9 +16,8 @@ export default {
     )
     
   },
-  mounted() {
-      console.log("created");
-    this.playNextAnimation();
+  mounted() {    
+    // this.playNextAnimation();
   },
   data: function() {
     return {
