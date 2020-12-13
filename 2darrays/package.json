@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "2darrays",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.21.0",
-    "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },

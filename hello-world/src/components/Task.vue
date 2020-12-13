@@ -10,6 +10,7 @@
                 </ul>
                 
                 <button class="btn btn-primary mt-3" @click="editTask">Edit</button>
+                <button class="btn btn-primary mt-3 ml-3" @click="deleteTask">Delete</button>
             </div> 
             <TaskForm v-else :initialTask="task" @taskSubmitted='doneEditTask'/>
         </div>
@@ -36,6 +37,9 @@ export default {
         doneEditTask:function(newTask) {
             this.$emit('taskUpdated', newTask);
             this.isEditing = false;
+        },
+        deleteTask:function() {
+            this.$emit('taskDeleted', this.task);
         }
     }
 }

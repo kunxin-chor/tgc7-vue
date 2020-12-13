@@ -1,16 +1,17 @@
 <template>
     <div class="container">
-        <TodoListAdvanced/>
+        <!-- <ProductList/> -->
+        <DynamicForm/>
     </div>
 </template>
 
 <script>
-import TodoListAdvanced from './components/TodoListAdvanced'
+import DynamicForm  from './components/DynamicForm'
 
 export default {
   name: 'App',
   components: {
-    TodoListAdvanced
+    DynamicForm
   }
 }
 </script>

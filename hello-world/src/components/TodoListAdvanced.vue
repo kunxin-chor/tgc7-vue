@@ -2,7 +2,7 @@
   <div>
     <h1>Task</h1>
     <div id="tasklist">
-        <Task v-for='t in tasks' :key='t.id' :task='t' @taskUpdated='updateTask'/>
+        <Task v-for='t in tasks' :key='t.id' :task='t' @taskUpdated='updateTask' @taskDeleted="deleteTask"/>
     </div>
     
     <h1>New Task</h1>
@@ -43,6 +43,10 @@ export default {
       updateTask:function(task) {          
           let taskIndex = this.tasks.findIndex( t => t.id == task.id);          
           this.$set(this.tasks, taskIndex, task);
+      },
+      deleteTask:function(task) {
+          let taskIndex = this.tasks.findIndex( t => t.id == task.id);
+          this.tasks.splice(taskIndex, 1);
       }
   }
 };
